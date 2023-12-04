@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: webdis
+    repo: https://github.com/warlordsnet/zia-api.git
+    plan: free
+    branch: main
+    runtime: node  # specify the correct runtime here
+    startCommand: node lib/api.js  # specify the start command here
+    buildCommand: yarn
